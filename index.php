@@ -4,86 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+ 
 <header>
-  <div class="logo">Logo</div>
-  <nav>
+  <nav class="main-nav">
+  <div class="logo"><img src="img/slogant2.png" alt=""></div>
+
     <ul>
-      <li><a href="#">Inicio</a></li>
+    </ul>
+
+    <ul>
+    </ul>
+
+    <ul>
+      <li><a href="#" class="specialBtn">Inicio</a></li>
+      <li><a href="#about" class="about">Sobre mí</a></li>
       <li><a href="#">Servicios</a></li>
-      <li><a href="#">Nosotros</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#contact">Contacto</a></li>
     </ul>
   </nav>
-  <div class="search">
-    <input type="text" placeholder="Buscar...">
-    <button><i class="fas fa-search"></i></button>
-  </div>
+
+
 </header>
 
   <main>
-    <section id="about">
-      <h2>Sobre mí</h2>
-      <p>Soy un desarrollador web apasionado por la tecnología y la programación. Me encanta aprender cosas nuevas y estar al día con las últimas tendencias en el mundo del desarrollo.</p>
-    </section>
 
-    <section id="skills">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-      </ul>
-    </section>
+    <section class="servicios">
+      <div class="servicios__titulo">
+        <h2>Nuestros Servicios</h2>
+        <p>Conoce lo que podemos ofrecerte</p>
+      </div>
 
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <ul>
-        <li>
-          <h3>Proyecto 1</h3>
-          <p>Descripción del proyecto</p>
-          <button class="modal-trigger" data-modal="project1-modal">Ver más</button>
-        </li>
-        <li>
-          <h3>Proyecto 2</h3>
-          <p>Descripción del proyecto</p>
-          <button class="modal-trigger" data-modal="project2-modal">Ver más</button>
-        </li>
-      </ul>
-    </section>
+      <div class="servicios__contenedor">
+        <div class="servicios__item">
+          <div class="servicios__icono">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="servicios__nombre">Diseño Web</h3>
+          <p class="servicios__descripcion">Creamos diseños web personalizados y atractivos para que tu negocio destaque.</p>
+        </div>
 
+        <div class="servicios__item">
+          <div class="servicios__icono">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="servicios__nombre">Desarrollo Web</h3>
+          <p class="servicios__descripcion">Desarrollamos sitios web funcionales y adaptables a cualquier dispositivo.</p>
+        </div>
+
+        <div class="servicios__item">
+          <div class="servicios__icono">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3 class="servicios__nombre">Marketing Digital</h3>
+          <p class="servicios__descripcion">Diseñamos estrategias de marketing digital para aumentar el alcance de tu negocio.</p>
+        </div>
+      </div>
+    </section>
+  
+
+    
     <section id="contact">
-      <h2>Contacto</h2>
-      <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+      <!-- <h2>Contáctanos</h2> -->
+      <div class='imgWomenContact'></div>
+    
+       
+      
 
-        <label for="message">Mensaje:</label>
-        <textarea id="message" name="message" required></textarea>
+      <div class="container">
+        <div class="img_form">
+          <img src="img/handWomen.png" height="500px" alt="Imagen">
+        </div>
+        <div class="contact_form">
+          <form method="POST" action="app/email.php" >
+            <div class="form-group" >
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" name="name" required >
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required >
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="message" required ></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+     
 
-        <button type="submit">Enviar</button>
-      </form>
     </section>
+
   </main>
 
-  <div class="modal" id="project1-modal">
-    <h3>Proyecto 1</h3>
-    <p>Descripción del proyecto</p>
-    <img src="" alt="Captura de pantalla del proyecto 1">
-    <button class="modal-close">Cerrar</button>
-  </div>
 
-  <div class="modal" id="project2-modal">
-    <h3>Proyecto 2</h3>
-    <p>Descripción del proyecto</p>
-    <img src="" alt="Captura de pantalla del proyecto 2">
-    <button class="modal-close">Cerrar</button>
- 
+  
+
+  
+
+
+
+</body>
+
+
+  
+
