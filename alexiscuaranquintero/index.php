@@ -5,25 +5,58 @@
   <title>About me</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
-  <header>
+
+<header class="header">
+  
+    <div class="header__logo">
+      <img src="../img/logo.png" alt="Logo del portafolio">
+    </div>
+
+    <div class="header__title">
     <h1>Alexis Cuaran Quintero</h1>
+    </div>
+
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
   </header>
+  <!-- <header>
+    <h1>Alexis Cuaran Quintero</h1>
+  </header> -->
   <main>
     <div class="container">
       <section class="about">
-        <div class="about-content">
-          <h2>¡Hola! </h2>
-          <p>I'm a front-end developer with a passion for creating beautiful and user-friendly websites. I have experience in HTML, CSS, JavaScript, and various front-end frameworks.</p>
-          <p>In my free time, I enjoy hiking, reading, and trying out new recipes in the kitchen.</p>
+      <div class="about-content">
+
+        <h2>Desarrollador Full Stack</h2>
+
+        <p>Me especializo en la creación de aplicaciones web de alta calidad y en la resolución de problemas de manera creativa. Con una experiencia de más de 4 años en el campo, he trabajado en proyectos de todos los tamaños, desde pequeñas aplicaciones web hasta soluciones empresariales complejas.</p>
+        
+      
+        <div id="backgroundTextAbout">
+          <p>Como desarrollador Full Stack, tengo experiencia en ambos lados del espectro tecnológico, desde el frontend hasta el backend. Estoy bien versado en varios lenguajes de programación y frameworks, incluyendo HTML, CSS, SASS, JavaScript, PHP, Laravel, MariaDB y Vue.js. Además usar el sistema de infraestructura "LAMP" y el control de versiones Git</p>
+          <p>Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer en mi carrera. Me enorgullezco de mi capacidad para trabajar bien en equipo y de mi enfoque en la colaboración y la comunicación eficaz.</p>
         </div>
+
+      </div>
         <img class="about-img" src="../img/profile/alex3.png" alt="Profile Picture">
       </section>
       <section class="skills">
         <h2>Mis habilidades</h2>
+        <div id="skill-img">
+          <img src="../img/megaman.webp" alt="">
+        </div>
         <ul>
           <li>
             <div class="skill-icon">
@@ -77,31 +110,31 @@
     </div>
   </main>
 
+  
+
+
 
   <footer class="footer">
   <div class="container">
     <div class="footer__logo">
-      <img src="img/logo-white.png" alt="Logo">
+      <img src="../img/logo.png" alt="Logo" id="imgDesigner">
     </div>
     <div class="footer__social">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100019632235310" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/Alextero_dude" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/alextero21/" target="_blank"><i class="fab fa-github"></i></a>
     </div>
-    <nav class="footer__nav">
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Portafolio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
     <div class="footer__info">
-      <p><i class="fas fa-map-marker-alt"></i> 123 Calle Falsa, Springfield</p>
-      <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-      <p><i class="fas fa-envelope"></i> info@misitio.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Calle 34 # 1-19</p>
+      <p><i class="fas fa-phone"></i> 3003430908</p>
+      <p><i class="fab fa-whatsapp"></i> 3169246573</p>
+      <p><i class="fas fa-envelope"></i> alexiscuaranquintero@tubni.com</p>
     </div>
+    <nav class="footer__name">
+      <p>&copy; 2023 Alexis Cuaran Quintero</p>
+    </nav>
+
+
   </div>
 </footer>
 

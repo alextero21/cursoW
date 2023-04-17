@@ -15,18 +15,62 @@ body {
   padding: 40px;
 }
 
-h1 {
-  text-align: center;
-  font-size: 70px;
-  font-family: "Press Start 2P";
-  color: #0055cc;
-  margin-top: 1em;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #222222;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.836);
+}
+.header__logo img {
+  height: 50px;
+}
+.header__logo {
+  border: 1px solid blue;
+}
+.header__title {
+  margin-left: 12em;
+}
+.header__nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.header__nav a:hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
 
+h1 {
+  text-align: center;
+  font-family: "Gruppo";
+  font-weight: 900;
+  animation: pulsateH1 1.5s infinite alternate;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #006aff, 0 0 82px #006aff, 0 0 92px #006aff, 0 0 102px #006aff, 0 0 151px #006aff;
+}
+
+@keyframes pulsateH1 {
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #006aff, 0 0 80px #006aff, 0 0 90px #006aff, 0 0 100px #006aff, 0 0 150px #006aff;
+  }
+  0% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #006aff, 0 0 45px #006aff, 0 0 55px #006aff, 0 0 70px #006aff, 0 0 80px #006aff;
+  }
+}
 h2 {
   text-align: center;
   font-size: 70px;
-  font-family: "Carter One";
+  font-family: "Gruppo";
   color: #0055cc;
 }
 
@@ -46,7 +90,10 @@ p {
   max-width: 600px;
 }
 .about-content p {
-  font-family: "Press Start 2P";
+  font-family: "Montserrat";
+}
+.about-content #backgroundTextAbout {
+  border-bottom: 3px;
 }
 
 .about h2 {
@@ -67,6 +114,10 @@ p {
 /* Styles for skills section */
 .skills {
   margin-bottom: 80px;
+}
+.skills #skill-img {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .skills h2 {
@@ -124,6 +175,7 @@ p {
 .skills p {
   font-size: 20px;
   font-weight: bold;
+  font-family: "Gruppo";
 }
 
 /* Styles for contact section */
@@ -168,6 +220,95 @@ p {
 
 #submit-btn:hover {
   background-color: #0055cc;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 0;
+}
+.footer__logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__logo img {
+  height: 90px;
+}
+.footer__social {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer__social a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+.footer__info {
+  font-size: 14px;
+  text-align: center;
+}
+.footer__info p {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__info p i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.footer__name {
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Gruppo";
+  font-size: 20px;
+}
+
+/*ANIMATION OF SLOGAN WDESIGNER*/
+#imgDesigner {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: animationD;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#imgDesigner::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: animationD-pulsar 2s ease-in-out alternate infinite;
+}
+
+@keyframes animationD {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes animationD-pulsar {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(3);
+  }
 }
 
 /*# sourceMappingURL=about.css.map */
