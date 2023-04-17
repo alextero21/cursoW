@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
-  
+  <link rel="icon" type="image/x-icon" href="/img/favicon1.ico">
+
   <link rel="stylesheet" href="css/index.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
