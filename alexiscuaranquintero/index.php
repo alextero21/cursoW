@@ -11,6 +11,8 @@
 </head>
 <body>
 
+
+
 <header class="header">
   
     <div class="header__logo">
@@ -23,9 +25,8 @@
 
     <nav class="header__nav">
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
+
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -39,18 +40,24 @@
       <section class="about">
       <div class="about-content">
 
-        <h2>Desarrollador Full Stack</h2>
+        <h2 class="underLineH1">Desarrollador Full Stack</h2>
 
-        <p>Me especializo en la creación de aplicaciones web de alta calidad y en la resolución de problemas de manera creativa. Con una experiencia de más de 4 años en el campo, he trabajado en proyectos de todos los tamaños, desde pequeñas aplicaciones web hasta soluciones empresariales complejas.</p>
+        <p>Me especializo en la creación de aplicaciones web de alta calidad y en la resolución de problemas de manera creativa. Con una experiencia de más de 2 años en el campo, he trabajado en proyectos de todos los tamaños, desde pequeñas aplicaciones web hasta soluciones empresariales complejas.</p>
         
-      
-        <div id="backgroundTextAbout">
-          <p>Como desarrollador Full Stack, tengo experiencia en ambos lados del espectro tecnológico, desde el frontend hasta el backend. Estoy bien versado en varios lenguajes de programación y frameworks, incluyendo HTML, CSS, SASS, JavaScript, PHP, Laravel, MariaDB y Vue.js. Además usar el sistema de infraestructura "LAMP" y el control de versiones Git</p>
+
+          <p>Como desarrollador Full Stack, tengo experiencia en ambos lados del espectro tecnológico, desde el frontend hasta el backend. Estoy bien versado en varios lenguajes de programación y frameworks, incluyendo <b>HTML, CSS, SASS, JavaScript, PHP, Laravel, MariaDB y Vue.js</b>, además de usar el sistema de infraestructura <b>"LAMP"</b> y el control de versiones <b>Git</b>.</p>
           <p>Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer en mi carrera. Me enorgullezco de mi capacidad para trabajar bien en equipo y de mi enfoque en la colaboración y la comunicación eficaz.</p>
-        </div>
+      
 
       </div>
-        <img class="about-img" src="../img/profile/alex3.png" alt="Profile Picture">
+
+      <div class="image-container">
+        <img src="../img/profile/alexis1-01.png" alt="Imagen 1">
+        <img src="../img/profile/alexis2-01.png" alt="Imagen 2">
+        <img src="../img/profile/alexis3-01.png" alt="Imagen 3">
+        <img src="../img/profile/alexis4-01.png" alt="Imagen 4">
+      </div>
+
       </section>
       <section class="skills">
         <h2>Mis habilidades</h2>
