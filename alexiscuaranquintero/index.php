@@ -13,23 +13,23 @@
 
 
 
-<header class="header">
-  
-    <div class="header__logo">
-      <img src="../img/logo.png" alt="Logo del portafolio">
-    </div>
+  <header class="header">
+    
+      <div class="header__logo">
+        <img src="../img/logo.png" alt="Logo del portafolio">
+      </div>
 
-    <div class="header__title">
-    <h1>Alexis Cuaran Quintero</h1>
-    </div>
+      <div class="header__title">
+      <h1>Alexis Cuaran Quintero</h1>
+      </div>
 
-    <nav class="header__nav">
-      <ul>
+      <nav class="header__nav">
+        <ul>
 
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+          <li><a href="#">Sobre mí</a></li>
+          <li><a href="#contact-form">Contacto</a></li>
+        </ul>
+      </nav>
 
   </header>
   <!-- <header>
@@ -52,11 +52,12 @@
       </div>
 
       <div class="image-container">
-        <img src="../img/profile/alexis1-01.png" alt="Imagen 1">
+        <img src="../img/profile/alexis1-01.png" alt="Imagen 1" >
         <img src="../img/profile/alexis2-01.png" alt="Imagen 2">
         <img src="../img/profile/alexis3-01.png" alt="Imagen 3">
         <img src="../img/profile/alexis4-01.png" alt="Imagen 4">
       </div>
+    
 
       </section>
       <section class="skills">
@@ -108,10 +109,10 @@
       <section class="contact">
         <h2>Ponte en contacto</h2>
         <form action="#" method="POST" id="contact-form">
-          <input type="text" name="name" id="name" placeholder="Name" required>
-          <input type="email" name="email" id="email" placeholder="Email" required>
-          <textarea name="message" id="message" placeholder="Message" required></textarea>
-          <button type="submit" id="submit-btn">Send</button>
+          <input type="text" name="name" id="name" placeholder="Nombre" required>
+          <input type="email" name="email" id="email" placeholder="Correo" required>
+          <textarea name="message" id="message" placeholder="Mensaje" required></textarea>
+          <button type="submit" id="submit-btn">Enviar</button>
         </form>
       </section>
     </div>
