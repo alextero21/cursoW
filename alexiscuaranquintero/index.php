@@ -108,10 +108,10 @@
       </section>
       <section class="contact">
         <h2>Ponte en contacto</h2>
-        <form action="#" method="POST" id="contact-form">
-          <input type="text" name="name" id="name" placeholder="Nombre" required>
-          <input type="email" name="email" id="email" placeholder="Correo" required>
-          <textarea name="message" id="message" placeholder="Mensaje" required></textarea>
+        <form action="contact.php" method="POST" id="contact-form">
+          <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+          <input type="email" name="correo" id="email" placeholder="Correo" required>
+          <textarea name="mensaje" id="message" placeholder="Mensaje" required></textarea>
           <button type="submit" id="submit-btn">Enviar</button>
         </form>
       </section>
