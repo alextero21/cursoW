@@ -112,10 +112,10 @@ body {
     height: 50px;
   }
 
-  &__title{
+  // &__title{
     
-    margin-left: 12em;
-  }
+  //   margin-left: 12em;
+  // }
 
   &__nav {
     
@@ -224,13 +224,14 @@ p {
 
 .about-content {
   max-width: 600px;
+  
 
   .underLineH1 {
     position: relative;
     overflow: hidden;
     padding-bottom: 10px;
     border-bottom: 1px solid transparent;
-  
+
     &::after {
       content: "";
       position: absolute;
@@ -252,8 +253,6 @@ p {
       }
     }
   }
-  
-  
 
   p{
     font-family: 'Montserrat';
@@ -283,30 +282,32 @@ p {
     margin-bottom: 20px;
   }
 
+  h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 50px;
+      margin-bottom: 50px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
 }
 
-.skills h2 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.skills ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.skills li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
 
 .skill-icon {
   width: 80px;
@@ -318,11 +319,12 @@ p {
   border-radius: 50%;
   margin-bottom: 10px;
   transition: all 0.2s ease-in-out;
-}
 
-.skill-icon img {
-  max-width: 60%;
-  max-height: 60%;
+  img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+
 }
 
 .skills li:hover {
@@ -394,6 +396,8 @@ p {
 /* Footer styles */
 
 .footer {
+
+ 
   background-color: #222;
   color: #fff;
   padding: 40px 0;
@@ -445,8 +449,10 @@ p {
     font-weight: bold;
     text-align: center;
     font-family: 'Gruppo';
-    font-size: 20px;
+    font-size: 1rem;
   }
+
+  
 
 
 }
@@ -501,32 +507,53 @@ p {
 
 
 
-@media only screen and (max-width: 1720px) {
 
-  .container{
+@media only screen and (max-width: 1680px){
+ 
 
-    
-    
-    border: 1px solid red;
-    width: 100%;
-   
-    
-    
-    
+  .about-content{
+
+    max-width: 100%;
+    margin-top: 25em;
+ 
   }
 
 
   .image-container {
-    
-    margin-bottom: 50em;
-    border: 1px solid red;
+    // align-items:end;
+    // border:1px solid red;
 
     img {
-   left: 0;
-   top:0;
-      margin: 10px;
+      border: 1px solid rgb(82, 82, 82);
+      left: 37%;
+       top:10em;
+
     }
   }
-
-
+  
 }
+
+@media only screen and (max-width: 550px){
+
+  .header {
+   
+    &__nav {
+      display: none;
+      
+    }
+  }
+  
+  .image-container {
+
+    img {
+   
+      left: 10%;
+      width: 18em;
+
+  
+
+    }
+  }
+}
+
+

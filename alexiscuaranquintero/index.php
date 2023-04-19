@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>About me</title>
@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="../css/about.css">
+  <link rel="icon" type="image/x-icon" href="../img/favicon1.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
@@ -32,9 +34,7 @@
       </nav>
 
   </header>
-  <!-- <header>
-    <h1>Alexis Cuaran Quintero</h1>
-  </header> -->
+
   <main>
     <div class="container">
       <section class="about">
@@ -61,10 +61,10 @@
 
       </section>
       <section class="skills">
-        <h2>Mis habilidades</h2>
+        <!-- <h2>Mis habilidades</h2>
         <div id="skill-img">
           <img src="../img/megaman.webp" alt="">
-        </div>
+        </div> -->
         <ul>
           <li>
             <div class="skill-icon">
@@ -148,6 +148,6 @@
 
 
 
-  <script src="app.js"></script>
+
 </body>
 </html>
