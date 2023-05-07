@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio</title>
+  <title>W Designer</title>
   <link rel="icon" type="image/x-icon" href="/img/favicon1.ico">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
@@ -43,7 +44,11 @@
     
     <p>😃Ofrecemos servicios de desarrollo web, diseño web y creación de proyectos personalizados para el camino hacia el éxito en línea🟢. ¡<a href="#contact">Contáctanos</a> hoy mismo para comenzar a trabajar juntos! 🦾</p>
    
+    <div id="imgCellphone">
+      <img src="img/intropc.png" alt="">
+    </div>
   </div>
+  
 
 
 
@@ -51,7 +56,7 @@
 </header>
 
   <main>
-
+<!-- 
     <section id="service" class="servicios">
 
       <div class="servicios__titulo">
@@ -88,8 +93,35 @@
 
 
 
-    </section>
-  
+    </section> -->
+<section class="services">
+  <div class="service">
+    <div class="service__image"></div>
+    <div class="service__content">
+      <h2 class="service__title">Servicio 1</h2>
+      <p class="service__description">Descripción del servicio 1.</p>
+      <button class="service__button">Más información</button>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service__image"></div>
+    <div class="service__content">
+      <h2 class="service__title">Servicio 2</h2>
+      <p class="service__description">Descripción del servicio 2.</p>
+      <button class="service__button">Más información</button>
+    </div>
+  </div>
+  <div class="service">
+    <div class="service__image"></div>
+    <div class="service__content">
+      <h2 class="service__title">Servicio 3</h2>
+      <p class="service__description">Descripción del servicio 3.</p>
+      <button class="service__button">Más información</button>
+    </div>
+  </div>
+</section>
+
+
 
     
     <section id="contact">
@@ -104,20 +136,20 @@
 
 
         <div class="contact_form">
-          <form method="POST" action="app/email.php" >
+          <form action="app/wdesigner.php" method="POST">
 
             <h2>Contáctanos</h2>
             <div class="form-group" >
               <label for="name">Nombre:</label>
-              <input type="text" id="name" name="name" required >
+              <input type="text" id="name" name="nombre" required placeholder="Julanito Pérez">
             </div>
             <div class="form-group">
               <label for="email">Correo:</label>
-              <input type="email" id="email" name="email" required >
+              <input type="email" id="email" name="correo" required placeholder="julanito@hotmail.com">
             </div>
             <div class="form-group">
               <label for="message">Mensaje:</label>
-              <textarea id="message" name="message" required ></textarea>
+              <textarea id="message" name="mensaje" required placeholder="Cotización, dudas, preguntas. Crear o hacerle soporte a tu página. Si ya tienes una página y quieres nuestra ayuda, aquí es donde te escuchamos con rápida respuesta ;)"></textarea>
             </div>
             <button type="submit">Enviar</button>
           </form>

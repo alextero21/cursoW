@@ -59,13 +59,17 @@ header {
   align-items: center;
  
   
+  #imgCellphone{
+    display: none;
+  }
   
   h1{
     
     font-family: 'Courgette';
     font-size: 10vh;
     font-weight:'bold';
-    color: $color-secondary;
+    color:$color-secondary;
+  
     line-height: 1;
 
    
@@ -74,11 +78,12 @@ header {
     margin-top: 30px;
     font-family: $font-family;
     font-weight:400;
-    color:#575757;
+    
 
     a{
-      text-decoration: none;
+
       font-weight: bold;
+      
     }
     
   }
@@ -320,6 +325,106 @@ nav {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+// Variables
+$primary-color: #ff5a5f;
+$secondary-color: #484848;
+$font-family: 'Open Sans', sans-serif;
+
+// Mixins
+@mixin button-styles {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Animaciones
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Estilos
+body {
+  background-color: white;
+  font-family: $font-family;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $secondary-color;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.service {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+  }
+}
+
+.service__image {
+  width: 100%;
+  height: 150px;
+  background-image: url('../images/service-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.service__content {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #skills {
@@ -690,23 +795,33 @@ display: flex;
     
     
     
-
+    #imgCellphone{
+      display: inline;
+    }
     
 
     h1{
       font-size: 50px;
+      text-shadow: 1px  0px 0px rgb(231, 231, 231),
+               0px  1px 0px rgb(231, 231, 231),
+              -1px  0px 0px rgb(231, 231, 231),
+               0px -1px 0px rgb(231, 231, 231);
     }
     p{
       font-size: 25px;
       padding-bottom: 30px;
+      color:#f3f3f3;
+      a{
+        color:#ffffff;
+      }
     }
   }
 
   header{
     // background-image: none;
-  background-size:auto;
-  background-image: url("../img/4861091.png");
-  // background-repeat: no-repeat, repeat;
+  background-size:cover;
+  background-image: url("../img/6927689.jpg");
+  background-repeat:repeat;
 
 
 
