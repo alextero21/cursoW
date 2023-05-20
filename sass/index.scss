@@ -1,12 +1,22 @@
 // Colores
+$clr-dark: #060922;
+$clr-white: #fff;
+$clr-main: #09aff4;
+$bs-body-font-size: 1rem;
+$bs-body-font-weight: 400;
+$bs-body-line-height: 1.5;
+
+/*-------------------------------------------------------*/
+
 $color-primary: #ffffff;
-$color-secondary: #6f51dc;
+$color-secondary: #060922;
 $color-light: #5c5c5c;
 $color-dark: #858585;
 $color-lightSecundary: #ebebeb;
 $color-tertiary: #333;
-$font-family:"Montserrat";
-$lineal-gradient-button:linear-gradient(0deg, rgba(134,106,200,1) 0%, rgba(79,18,222,1) 100%);
+$main-color:#09aff4;
+$font-family:"Jost", "sans-serif";
+$lineal-gradient-button:linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(237,237,237,1) 94%);
 
 // Tamaños
 $font-size-base: 1rem;
@@ -16,34 +26,83 @@ $line-height-base: 1.5;
 $grid-columns: 12;
 $grid-gutter: 10px;
 
+
+/*-------------------------------------------------------*/
 // Clases para el encabezado
+
 *{
- 
-  font-family:$font-family;
-  margin: 0;
-  padding: 0;
-  
+  &:after:before{
+    box-sizing: border-box;
+  }
+  &:selection{
+    background: $clr-main;
+    color: $clr-white;
+  }
+}
+
+body{
+
+    margin: 0;
+    font-family: $font-family;
+    direction: ltr;
+    text-align: left;
+    position: relative;
+    color: $clr-dark;
+    background: $clr-white;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in-out 0s;
+
+    display: block;
+
+    font-size: $bs-body-font-size;
+    font-weight: $bs-body-font-weight;
+    line-height: $bs-body-line-height;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+
+    
+}
+
+.header-basic{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  border-bottom: 1px solid transparent;
+}
+
+
+header{
+  display: block;
+}
+
+.container{
+  width: 100%;
+  // padding-right: var(--bs-gutter-x,.75rem);
+  // padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
 
-header {
+/*-------------------------------------------------------*/
 
-  background-image: url("../img/background.png");
-  background-repeat: no-repeat, repeat;
-  background-size:100%;
-
+// header {
+//   background: #d9dff1;
   
-  color: $color-light;
+//   color: $color-light;
 
-  text-align: center;
+//   text-align: center;
 
-  width: auto;
-  height:100vh;
+//   width: auto;
+//   height:100vh;
 
   
  
-}
+// }
 
 
 .intro{
@@ -63,16 +122,17 @@ header {
     display: none;
   }
   
-  h1{
+  .main-title{
     
-    font-family: 'Courgette';
-    font-size: 10vh;
-    font-weight:'bold';
+    
+    font-size: 3.5rem;
+    text-transform: capitalize;
+
+    font-weight:700;
     color:$color-secondary;
   
-    line-height: 1;
+    line-height: 1.5;
 
-   
   }
   p{
     margin-top: 30px;
@@ -88,8 +148,60 @@ header {
     
   }
 
+  .featured-textSolution{
+    font-family: "Jost", "sans-serif";
+    font-weight: 700;
+    color: $main-color;
+    position: relative;
+  
+    svg{
+      position: absolute;
+      left: 50%;
+      width: calc(100% + 10px);
+      height: calc(100% + 40px);
+      transform: translate(-50%, -50%);
+  
+      &.wavey-underline{
+        top: 100%;
+        path{
+          fill: $main-color;
+        }
+      }
+  
+      path{
+        stroke: $main-color;
+      }
+    }
+  
+  }
+
+  .text-tech{
+    font-family: "Jost", "sans-serif";
+    font-weight: 700;
+  }
   
 }
+
+.design-element{
+
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  opacity: 0.25;
+  // z-index: -1; //pendiente por colocar
+  left: 0;
+  top: 0;
+  transform: translate(-25%, -25%);
+  
+  &.stripes{
+    background-image: repeating-linear-gradient( -55deg, transparent 0.9px, $main-color 1.25px, $main-color 3px, transparent 4px, transparent 8px );
+  }
+  &.rounded-shape{
+    border-radius: 50%;
+  }
+}
+
+
 
 // Clases para el logo
 .logo {
@@ -127,7 +239,7 @@ nav {
   ul {
 
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     list-style-type:none;
     width: 100%;
@@ -144,21 +256,21 @@ nav {
     li {
 
       margin: 0 10px;
-      font-weight: bold;
+      font-weight: 100;
       margin-right: 7em;
       
       a {
         
-        color: $color-dark;
+        color: $color-secondary;
         text-decoration: none;
 
         &:hover {
-          color: $color-primary;
-          background: $lineal-gradient-button;
+          color: $main-color;
+
           
         }
 
-        background-color: $color-primary;
+
         padding: 10px;
         padding-left: 20px;
         padding-right: 20px;
@@ -167,18 +279,14 @@ nav {
       }
 
       .specialBtn{
-   
-    
-        background: $lineal-gradient-button;
-        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        color:$color-primary;
+        color:$main-color;
 
         &:hover {
-          color: $color-secondary;
-          background: $color-primary;
-          
+          color: $main-color;
+
           
         }
+
       }
 
       
@@ -366,11 +474,7 @@ $font-family: 'Open Sans', sans-serif;
   }
 }
 
-// Estilos
-body {
-  background-color: white;
-  font-family: $font-family;
-}
+
 
 h1 {
   font-size: 2.5rem;
