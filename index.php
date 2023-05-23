@@ -8,44 +8,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- fav icon -->
-    <link rel="icon" href="assets/images/fav-icon/fav-icon.png">
+    <!-- <link rel="icon" href="assets/images/fav-icon/fav-icon.png"> -->
 
     <!-- bootstarp -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <!-- animate.css file -->
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
 
     <!-- Swiper -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
 
     <!-- flaticon -->
-    <link rel="stylesheet" href="css/flaticon/flaticon.css">
+    <!-- <link rel="stylesheet" href="css/flaticon/flaticon.css"> -->
 
     <!-- fontAwesome -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
 
     <!-- bootstrap icons -->
-    <link rel="stylesheet" href="css/bootstrap-icons-1.9.1/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap-icons-1.9.1/bootstrap-icons.css"> -->
 
     <!-- Fancybox -->
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
 
     <!-- fonts site preconnect -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
 
     <!-- fonts site preconnect -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> -->
 
     <!-- Font Family -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
 
     <!-- main-LTR -->
-    <link rel="stylesheet" href="css/main-LTR.css">
-    <title>W Designer</title>
+    <!-- <link rel="stylesheet" href="css/main-LTR.css">-->
+    <title>W Designer</title> 
+    <link rel="stylesheet" href="css/index.css">
 </head>
-  <!-- <img class='logo-img dark-logo' src='img/logo-light.png' alt='Logo W Designer Dark'> -->
-  <!-- <img class='logo-img dark-logo' src='img/logo-night.png' alt='Logo W Designer'> -->
+
 
 <body class="">
     <!--Start Page Header-->
@@ -65,7 +65,9 @@
       <div class="container">
         <nav class="menu-navbar">
           <div class="header-logo">
-            <a class="logo-link" href="#"><img class="logo-img light-logo" loading="lazy" src="assets/images/logo/logo-light.png" alt="logo"><img class="logo-img dark-logo" loading="lazy" src="assets/images/logo/logo-dark.png" alt="logo"></a>
+            <a class="logo-link" href="#">
+                <img class='logo-img dark-logo' src='img/logo-light.png' alt='Logo W Designer Dark'> 
+                <!-- <img class='logo-img dark-logo' src='img/logo-night.png' alt='Logo W Designer'>  -->
           </div>
           <div class="links menu-wrapper">
             <ul class="list-js links-list">
